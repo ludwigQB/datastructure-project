@@ -1,3 +1,3 @@
 # datastructure-project
-test
-hello world
+test\n
+hello world\n
