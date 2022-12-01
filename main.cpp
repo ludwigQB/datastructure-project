@@ -3,7 +3,6 @@ using namespace std;
 
 #define MAX_GRADE 4
 #define MAX_CLASS 10
-#define MAX_STU 30
 
 typedef struct LESSON{
     int math;
