@@ -140,6 +140,7 @@ int main(){
     Insert(L,2,4);
     Insert(L,2,4);
     Insert(L,2,3);
+    Insert(L,2,4);
     Insert(L,2,2);
     Insert(L,2,2);
     Insert(L,1,2);
