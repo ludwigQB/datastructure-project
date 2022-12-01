@@ -52,4 +52,10 @@ int InitList(LIST &L,int GNum,int CNum){
             L.Grade[i].Class[j].FirsrStu=p;
         }
     }
+    for(int i=0;i<CNum;i++){
+        if(i=CNum){
+            L.Grade[0].Class[i].FirsrStu->next=NULL;
+        }
+        L.Grade[0].Class[i].FirsrStu->next=L.Grade[0].Class[i+1].FirsrStu;
+    }
 }
