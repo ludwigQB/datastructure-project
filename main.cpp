@@ -133,7 +133,7 @@ int PrintC(LIST L,int GNum,int CNum){
 int main(){
     LIST L;
     InitList(L,3,4);//初始化一个三个年级，每个年级四个班的链表；
-    //随便插几个学生
+    //随便插入几个学生节点
     Insert(L,3,4);
     Insert(L,3,3);
     Insert(L,2,4);
