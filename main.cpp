@@ -28,42 +28,51 @@ int main() {
 			}
 			break;
 		case 2:
-            Delete(L);
+			int flag=Delete(L);
+			if (flag == 0) {
+				printf("删除成功！\n");
+			}
+			else
+				printf("删除失败\n");
 			break;
 		case 3:
-			SearchA(L);
+			int flag1 = SearchA(L);
+			if (flag1 == 0) {
+				printf("查找失败\n");;
+			}
 			break;
-        case 4:
-            cout<<"1--输出全体学生信息，2--输出某年级学生信息，3--输出某班级学生信息：";
-            int temp4;
-            switch(temp4){
-                case 1:
-                    PrintAll(L);
-                    break;
-                case 2:
-                    int temp5;
-                    cout<<"请输入要输出的年级号：";
-                    cin>>temp5;
-                    PrintG(L,temp5);
-                    break;
-                case 3:
-                    int temp6,temp7;
-                    cout<<"请输入要输出班级的年级号与班级号：";
-                    cin>>temp6>>temp7;
-                    PrintC(L,temp6,temp7);
-                    break;
-                default:
-                    break;
-            }
-            break;
+		case 4:
+			cout << "1--输出全体学生信息，2--输出某年级学生信息，3--输出某班级学生信息：";
+			int temp4;
+			cin >> temp4;
+			switch (temp4) {
+			case 1:
+				PrintAll(L);
+				break;
+			case 2:
+				int temp5;
+				cout << "请输入要输出的年级号：";
+				cin >> temp5;
+				PrintG(L, temp5);
+				break;
+			case 3:
+				int temp6, temp7;
+				cout << "请输入要输出班级的年级号与班级号：";
+				cin >> temp6 >> temp7;
+				PrintC(L, temp6, temp7);
+				break;
+			default:
+				break;
+			}
+			break;
 		case 5:
-            int temp1, temp2, temp3;
+			int temp1, temp2, temp3;
 			cout << "请输入需要排序班级的年级号与班级号(空格号分隔开）：";
 			cin >> temp1 >> temp2;
 			cout << "请输入需要排序的科目(英语—1，数学-2，语文-3）：";
 			cin >> temp3;
-			Sort(L, temp1, temp2, temp3); 
-            break;
+			Sort(L, temp1, temp2, temp3);
+			break;
 		case 6:
 			return 0;
 		default:
