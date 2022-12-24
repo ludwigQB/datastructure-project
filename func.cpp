@@ -10,8 +10,8 @@ int InitList(LIST &L,int GNum,int CNum){
             STU* p=new STU;
             p->Class_Name=2048;
             p->Grade_Name=2048;
-            p->name="ludwig";
-            p->ID="kelvin";
+            p->name="NULL";
+            p->ID="NULL";
             p->Mark=NULL;
             p->next=NULL;
             L.Grade[i].Class[j].Class_Num=j;
@@ -35,6 +35,7 @@ int InitList(LIST &L,int GNum,int CNum){
     return 0;
 }
 
+//测试用
 int Insert(LIST&L,int GNum,int CNum){
     STU*p=new STU;
     LESSON*m=new LESSON;

@@ -5,7 +5,7 @@ using namespace std;
 #define MAX_GRADE 4
 #define MAX_CLASS 10
 
-//课程与成绩
+//课程与成绩(临时
 typedef struct LESSON{
     int math;
     int eng;
