@@ -1,4 +1,3 @@
-#pragma once
 #include"func.h"
 
 int InitList(LIST& L, int GNum, int CNum) {
